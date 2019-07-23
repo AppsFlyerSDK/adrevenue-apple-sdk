@@ -7,25 +7,119 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4714897122E7104600623CDA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4714897022E7104600623CDA /* AppDelegate.m */; };
-		4714897422E7104600623CDA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4714897322E7104600623CDA /* ViewController.m */; };
+		1C7B029996E3D5C8BBD22633 /* Pods_iOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E292978D40A97790422EECC /* Pods_iOS_Example.framework */; };
 		4714897722E7104600623CDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4714897522E7104600623CDA /* Main.storyboard */; };
 		4714897922E7104700623CDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4714897822E7104700623CDA /* Assets.xcassets */; };
 		4714897C22E7104700623CDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4714897A22E7104700623CDA /* LaunchScreen.storyboard */; };
 		4714897F22E7104700623CDA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4714897E22E7104700623CDA /* main.m */; };
+		4780A1C322E7310E0077E1E0 /* MPNativeCollectionViewAdCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780A18322E7310D0077E1E0 /* MPNativeCollectionViewAdCollectionViewCell.m */; };
+		4780A1C422E7310E0077E1E0 /* MPNativeVideoTableViewAdPlacerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780A18522E7310D0077E1E0 /* MPNativeVideoTableViewAdPlacerView.m */; };
+		4780A1C522E7310E0077E1E0 /* MPNativeAdCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780A18722E7310D0077E1E0 /* MPNativeAdCell.m */; };
+		4780A1C622E7310E0077E1E0 /* MPStaticNativeAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780A18C22E7310D0077E1E0 /* MPStaticNativeAdView.m */; };
+		4780A1C722E7310E0077E1E0 /* MPNativeAdTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4780A18D22E7310D0077E1E0 /* MPNativeAdTableHeaderView.xib */; };
+		4780A1C822E7310E0077E1E0 /* MPIndexPathPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780A18E22E7310D0077E1E0 /* MPIndexPathPickerView.m */; };
+		4780A1C922E7310E0077E1E0 /* MPNativeAdPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780A19022E7310D0077E1E0 /* MPNativeAdPageView.m */; };
+		4780A1CA22E7310E0077E1E0 /* MPTableViewAdPlacerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780A19122E7310D0077E1E0 /* MPTableViewAdPlacerView.m */; };
+		4780A1CB22E7310E0077E1E0 /* MPCollectionViewAdPlacerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780A19322E7310D0077E1E0 /* MPCollectionViewAdPlacerView.m */; };
+		4780A1CC22E7310E0077E1E0 /* MPNativeAdTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780A19422E7310D0077E1E0 /* MPNativeAdTableHeaderView.m */; };
+		4780A1CD22E7310E0077E1E0 /* MPNativeVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780A19722E7310D0077E1E0 /* MPNativeVideoView.m */; };
+		4780A1CE22E7310E0077E1E0 /* MPAdPersistenceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780A19822E7310D0077E1E0 /* MPAdPersistenceManager.m */; };
+		4780A1CF22E7310E0077E1E0 /* MPRewardedVideoAdDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4780A19A22E7310D0077E1E0 /* MPRewardedVideoAdDetailViewController.xib */; };
+		4780A1D022E7310E0077E1E0 /* MPNativeAdDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780A19B22E7310D0077E1E0 /* MPNativeAdDetailViewController.m */; };
+		4780A1D122E7310E0077E1E0 /* MPBannerAdDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4780A19D22E7310D0077E1E0 /* MPBannerAdDetailViewController.xib */; };
+		4780A1D222E7310E0077E1E0 /* MPAdEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780A19E22E7310D0077E1E0 /* MPAdEntryViewController.m */; };
+		4780A1D322E7310E0077E1E0 /* MPAdTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780A1A022E7310D0077E1E0 /* MPAdTableViewController.m */; };
+		4780A1D422E7310E0077E1E0 /* MPNativeAdPlacerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780A1A322E7310D0077E1E0 /* MPNativeAdPlacerTableViewController.m */; };
+		4780A1D522E7310E0077E1E0 /* MPNativeAdPlacerCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780A1A422E7310D0077E1E0 /* MPNativeAdPlacerCollectionViewController.m */; };
+		4780A1D622E7310E0077E1E0 /* MPNativeAdPlacerPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780A1A722E7310D0077E1E0 /* MPNativeAdPlacerPageViewController.m */; };
+		4780A1D722E7310E0077E1E0 /* MPRewardedVideoAdDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780A1A822E7310D0077E1E0 /* MPRewardedVideoAdDetailViewController.m */; };
+		4780A1D822E7310E0077E1E0 /* MPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780A1AB22E7310D0077E1E0 /* MPViewController.m */; };
+		4780A1D922E7310E0077E1E0 /* MPAdEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4780A1AD22E7310D0077E1E0 /* MPAdEntryViewController.xib */; };
+		4780A1DA22E7310E0077E1E0 /* MPMRectBannerAdDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780A1AF22E7310D0077E1E0 /* MPMRectBannerAdDetailViewController.m */; };
+		4780A1DB22E7310E0077E1E0 /* MPInterstitialAdDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780A1B022E7310D0077E1E0 /* MPInterstitialAdDetailViewController.m */; };
+		4780A1DC22E7310E0077E1E0 /* MPLeaderboardBannerAdDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780A1B222E7310D0077E1E0 /* MPLeaderboardBannerAdDetailViewController.m */; };
+		4780A1DD22E7310E0077E1E0 /* MPInterstitialAdDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4780A1B322E7310D0077E1E0 /* MPInterstitialAdDetailViewController.xib */; };
+		4780A1DE22E7310E0077E1E0 /* MPBannerAdDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780A1B422E7310D0077E1E0 /* MPBannerAdDetailViewController.m */; };
+		4780A1DF22E7310E0077E1E0 /* MPNativeAdDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4780A1B622E7310D0077E1E0 /* MPNativeAdDetailViewController.xib */; };
+		4780A1E022E7310E0077E1E0 /* MPAdSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780A1BB22E7310D0077E1E0 /* MPAdSection.m */; };
+		4780A1E122E7310E0077E1E0 /* MPAdInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780A1BD22E7310D0077E1E0 /* MPAdInfo.m */; };
+		4780A1E222E7310E0077E1E0 /* MoPubAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780A1BF22E7310D0077E1E0 /* MoPubAppDelegate.m */; };
+		4780A1E322E7310E0077E1E0 /* MPSampleAppInstanceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780A1C022E7310E0077E1E0 /* MPSampleAppInstanceProvider.m */; };
+		4780A1E422E7310E0077E1E0 /* MPSampleAppLogReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780A1C222E7310E0077E1E0 /* MPSampleAppLogReader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F8C98D8FE81B5DD6969145D /* Pods-iOS Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Example.debug.xcconfig"; path = "Target Support Files/Pods-iOS Example/Pods-iOS Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4714896C22E7104600623CDA /* iOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4714896F22E7104600623CDA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		4714897022E7104600623CDA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4714897222E7104600623CDA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4714897322E7104600623CDA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4714897622E7104600623CDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4714897822E7104700623CDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4714897B22E7104700623CDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4714897D22E7104700623CDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4714897E22E7104700623CDA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4780A18322E7310D0077E1E0 /* MPNativeCollectionViewAdCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPNativeCollectionViewAdCollectionViewCell.m; sourceTree = "<group>"; };
+		4780A18422E7310D0077E1E0 /* MPIndexPathPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPIndexPathPickerView.h; sourceTree = "<group>"; };
+		4780A18522E7310D0077E1E0 /* MPNativeVideoTableViewAdPlacerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPNativeVideoTableViewAdPlacerView.m; sourceTree = "<group>"; };
+		4780A18622E7310D0077E1E0 /* MPNativeAdTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPNativeAdTableHeaderView.h; sourceTree = "<group>"; };
+		4780A18722E7310D0077E1E0 /* MPNativeAdCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPNativeAdCell.m; sourceTree = "<group>"; };
+		4780A18822E7310D0077E1E0 /* MPCollectionViewAdPlacerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPCollectionViewAdPlacerView.h; sourceTree = "<group>"; };
+		4780A18922E7310D0077E1E0 /* MPTableViewAdPlacerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPTableViewAdPlacerView.h; sourceTree = "<group>"; };
+		4780A18A22E7310D0077E1E0 /* MPNativeAdPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPNativeAdPageView.h; sourceTree = "<group>"; };
+		4780A18B22E7310D0077E1E0 /* MPNativeVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPNativeVideoView.h; sourceTree = "<group>"; };
+		4780A18C22E7310D0077E1E0 /* MPStaticNativeAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPStaticNativeAdView.m; sourceTree = "<group>"; };
+		4780A18D22E7310D0077E1E0 /* MPNativeAdTableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MPNativeAdTableHeaderView.xib; sourceTree = "<group>"; };
+		4780A18E22E7310D0077E1E0 /* MPIndexPathPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPIndexPathPickerView.m; sourceTree = "<group>"; };
+		4780A18F22E7310D0077E1E0 /* MPNativeCollectionViewAdCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPNativeCollectionViewAdCollectionViewCell.h; sourceTree = "<group>"; };
+		4780A19022E7310D0077E1E0 /* MPNativeAdPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPNativeAdPageView.m; sourceTree = "<group>"; };
+		4780A19122E7310D0077E1E0 /* MPTableViewAdPlacerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPTableViewAdPlacerView.m; sourceTree = "<group>"; };
+		4780A19222E7310D0077E1E0 /* MPNativeAdCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPNativeAdCell.h; sourceTree = "<group>"; };
+		4780A19322E7310D0077E1E0 /* MPCollectionViewAdPlacerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCollectionViewAdPlacerView.m; sourceTree = "<group>"; };
+		4780A19422E7310D0077E1E0 /* MPNativeAdTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPNativeAdTableHeaderView.m; sourceTree = "<group>"; };
+		4780A19522E7310D0077E1E0 /* MPNativeVideoTableViewAdPlacerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPNativeVideoTableViewAdPlacerView.h; sourceTree = "<group>"; };
+		4780A19622E7310D0077E1E0 /* MPStaticNativeAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPStaticNativeAdView.h; sourceTree = "<group>"; };
+		4780A19722E7310D0077E1E0 /* MPNativeVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPNativeVideoView.m; sourceTree = "<group>"; };
+		4780A19822E7310D0077E1E0 /* MPAdPersistenceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPAdPersistenceManager.m; sourceTree = "<group>"; };
+		4780A19A22E7310D0077E1E0 /* MPRewardedVideoAdDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MPRewardedVideoAdDetailViewController.xib; sourceTree = "<group>"; };
+		4780A19B22E7310D0077E1E0 /* MPNativeAdDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPNativeAdDetailViewController.m; sourceTree = "<group>"; };
+		4780A19C22E7310D0077E1E0 /* MPRewardedVideoAdDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPRewardedVideoAdDetailViewController.h; sourceTree = "<group>"; };
+		4780A19D22E7310D0077E1E0 /* MPBannerAdDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MPBannerAdDetailViewController.xib; sourceTree = "<group>"; };
+		4780A19E22E7310D0077E1E0 /* MPAdEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPAdEntryViewController.m; sourceTree = "<group>"; };
+		4780A19F22E7310D0077E1E0 /* MPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPViewController.h; sourceTree = "<group>"; };
+		4780A1A022E7310D0077E1E0 /* MPAdTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPAdTableViewController.m; sourceTree = "<group>"; };
+		4780A1A122E7310D0077E1E0 /* MPInterstitialAdDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPInterstitialAdDetailViewController.h; sourceTree = "<group>"; };
+		4780A1A222E7310D0077E1E0 /* MPMRectBannerAdDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPMRectBannerAdDetailViewController.h; sourceTree = "<group>"; };
+		4780A1A322E7310D0077E1E0 /* MPNativeAdPlacerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPNativeAdPlacerTableViewController.m; sourceTree = "<group>"; };
+		4780A1A422E7310D0077E1E0 /* MPNativeAdPlacerCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPNativeAdPlacerCollectionViewController.m; sourceTree = "<group>"; };
+		4780A1A522E7310D0077E1E0 /* MPBannerAdDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPBannerAdDetailViewController.h; sourceTree = "<group>"; };
+		4780A1A622E7310D0077E1E0 /* MPLeaderboardBannerAdDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLeaderboardBannerAdDetailViewController.h; sourceTree = "<group>"; };
+		4780A1A722E7310D0077E1E0 /* MPNativeAdPlacerPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPNativeAdPlacerPageViewController.m; sourceTree = "<group>"; };
+		4780A1A822E7310D0077E1E0 /* MPRewardedVideoAdDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPRewardedVideoAdDetailViewController.m; sourceTree = "<group>"; };
+		4780A1A922E7310D0077E1E0 /* MPNativeAdDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPNativeAdDetailViewController.h; sourceTree = "<group>"; };
+		4780A1AA22E7310D0077E1E0 /* MPAdTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPAdTableViewController.h; sourceTree = "<group>"; };
+		4780A1AB22E7310D0077E1E0 /* MPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPViewController.m; sourceTree = "<group>"; };
+		4780A1AC22E7310D0077E1E0 /* MPAdEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPAdEntryViewController.h; sourceTree = "<group>"; };
+		4780A1AD22E7310D0077E1E0 /* MPAdEntryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MPAdEntryViewController.xib; sourceTree = "<group>"; };
+		4780A1AE22E7310D0077E1E0 /* MPNativeAdPlacerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPNativeAdPlacerTableViewController.h; sourceTree = "<group>"; };
+		4780A1AF22E7310D0077E1E0 /* MPMRectBannerAdDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPMRectBannerAdDetailViewController.m; sourceTree = "<group>"; };
+		4780A1B022E7310D0077E1E0 /* MPInterstitialAdDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPInterstitialAdDetailViewController.m; sourceTree = "<group>"; };
+		4780A1B122E7310D0077E1E0 /* MPNativeAdPlacerPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPNativeAdPlacerPageViewController.h; sourceTree = "<group>"; };
+		4780A1B222E7310D0077E1E0 /* MPLeaderboardBannerAdDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLeaderboardBannerAdDetailViewController.m; sourceTree = "<group>"; };
+		4780A1B322E7310D0077E1E0 /* MPInterstitialAdDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MPInterstitialAdDetailViewController.xib; sourceTree = "<group>"; };
+		4780A1B422E7310D0077E1E0 /* MPBannerAdDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPBannerAdDetailViewController.m; sourceTree = "<group>"; };
+		4780A1B522E7310D0077E1E0 /* MPNativeAdPlacerCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPNativeAdPlacerCollectionViewController.h; sourceTree = "<group>"; };
+		4780A1B622E7310D0077E1E0 /* MPNativeAdDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MPNativeAdDetailViewController.xib; sourceTree = "<group>"; };
+		4780A1B722E7310D0077E1E0 /* MPAdPersistenceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPAdPersistenceManager.h; sourceTree = "<group>"; };
+		4780A1B822E7310D0077E1E0 /* MoPubAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoPubAppDelegate.h; sourceTree = "<group>"; };
+		4780A1B922E7310D0077E1E0 /* MPSampleAppInstanceProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPSampleAppInstanceProvider.h; sourceTree = "<group>"; };
+		4780A1BB22E7310D0077E1E0 /* MPAdSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPAdSection.m; sourceTree = "<group>"; };
+		4780A1BC22E7310D0077E1E0 /* MPAdInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPAdInfo.h; sourceTree = "<group>"; };
+		4780A1BD22E7310D0077E1E0 /* MPAdInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPAdInfo.m; sourceTree = "<group>"; };
+		4780A1BE22E7310D0077E1E0 /* MPAdSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPAdSection.h; sourceTree = "<group>"; };
+		4780A1BF22E7310D0077E1E0 /* MoPubAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoPubAppDelegate.m; sourceTree = "<group>"; };
+		4780A1C022E7310E0077E1E0 /* MPSampleAppInstanceProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPSampleAppInstanceProvider.m; sourceTree = "<group>"; };
+		4780A1C122E7310E0077E1E0 /* MPSampleAppLogReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPSampleAppLogReader.h; sourceTree = "<group>"; };
+		4780A1C222E7310E0077E1E0 /* MPSampleAppLogReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPSampleAppLogReader.m; sourceTree = "<group>"; };
+		6E292978D40A97790422EECC /* Pods_iOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9C39A111D05999DD1081B63 /* Pods-iOS Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Example.release.xcconfig"; path = "Target Support Files/Pods-iOS Example/Pods-iOS Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C7B029996E3D5C8BBD22633 /* Pods_iOS_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +139,8 @@
 			children = (
 				4714896E22E7104600623CDA /* iOS Example */,
 				4714896D22E7104600623CDA /* Products */,
+				97CA483F4DF365A6562F5BA8 /* Pods */,
+				A3A14D30968459B3802E3636 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +155,17 @@
 		4714896E22E7104600623CDA /* iOS Example */ = {
 			isa = PBXGroup;
 			children = (
-				4714896F22E7104600623CDA /* AppDelegate.h */,
-				4714897022E7104600623CDA /* AppDelegate.m */,
-				4714897222E7104600623CDA /* ViewController.h */,
-				4714897322E7104600623CDA /* ViewController.m */,
+				4780A19922E7310D0077E1E0 /* Controllers */,
+				4780A1BA22E7310D0077E1E0 /* Domain */,
+				4780A1B822E7310D0077E1E0 /* MoPubAppDelegate.h */,
+				4780A1BF22E7310D0077E1E0 /* MoPubAppDelegate.m */,
+				4780A1B722E7310D0077E1E0 /* MPAdPersistenceManager.h */,
+				4780A19822E7310D0077E1E0 /* MPAdPersistenceManager.m */,
+				4780A1B922E7310D0077E1E0 /* MPSampleAppInstanceProvider.h */,
+				4780A1C022E7310E0077E1E0 /* MPSampleAppInstanceProvider.m */,
+				4780A1C122E7310E0077E1E0 /* MPSampleAppLogReader.h */,
+				4780A1C222E7310E0077E1E0 /* MPSampleAppLogReader.m */,
+				4780A18222E7310D0077E1E0 /* Views */,
 				4714897522E7104600623CDA /* Main.storyboard */,
 				4714897822E7104700623CDA /* Assets.xcassets */,
 				4714897A22E7104700623CDA /* LaunchScreen.storyboard */,
@@ -71,6 +175,98 @@
 			path = "iOS Example";
 			sourceTree = "<group>";
 		};
+		4780A18222E7310D0077E1E0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4780A18322E7310D0077E1E0 /* MPNativeCollectionViewAdCollectionViewCell.m */,
+				4780A18422E7310D0077E1E0 /* MPIndexPathPickerView.h */,
+				4780A18522E7310D0077E1E0 /* MPNativeVideoTableViewAdPlacerView.m */,
+				4780A18622E7310D0077E1E0 /* MPNativeAdTableHeaderView.h */,
+				4780A18722E7310D0077E1E0 /* MPNativeAdCell.m */,
+				4780A18822E7310D0077E1E0 /* MPCollectionViewAdPlacerView.h */,
+				4780A18922E7310D0077E1E0 /* MPTableViewAdPlacerView.h */,
+				4780A18A22E7310D0077E1E0 /* MPNativeAdPageView.h */,
+				4780A18B22E7310D0077E1E0 /* MPNativeVideoView.h */,
+				4780A18C22E7310D0077E1E0 /* MPStaticNativeAdView.m */,
+				4780A18D22E7310D0077E1E0 /* MPNativeAdTableHeaderView.xib */,
+				4780A18E22E7310D0077E1E0 /* MPIndexPathPickerView.m */,
+				4780A18F22E7310D0077E1E0 /* MPNativeCollectionViewAdCollectionViewCell.h */,
+				4780A19022E7310D0077E1E0 /* MPNativeAdPageView.m */,
+				4780A19122E7310D0077E1E0 /* MPTableViewAdPlacerView.m */,
+				4780A19222E7310D0077E1E0 /* MPNativeAdCell.h */,
+				4780A19322E7310D0077E1E0 /* MPCollectionViewAdPlacerView.m */,
+				4780A19422E7310D0077E1E0 /* MPNativeAdTableHeaderView.m */,
+				4780A19522E7310D0077E1E0 /* MPNativeVideoTableViewAdPlacerView.h */,
+				4780A19622E7310D0077E1E0 /* MPStaticNativeAdView.h */,
+				4780A19722E7310D0077E1E0 /* MPNativeVideoView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4780A19922E7310D0077E1E0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4780A19A22E7310D0077E1E0 /* MPRewardedVideoAdDetailViewController.xib */,
+				4780A19B22E7310D0077E1E0 /* MPNativeAdDetailViewController.m */,
+				4780A19C22E7310D0077E1E0 /* MPRewardedVideoAdDetailViewController.h */,
+				4780A19D22E7310D0077E1E0 /* MPBannerAdDetailViewController.xib */,
+				4780A19E22E7310D0077E1E0 /* MPAdEntryViewController.m */,
+				4780A19F22E7310D0077E1E0 /* MPViewController.h */,
+				4780A1A022E7310D0077E1E0 /* MPAdTableViewController.m */,
+				4780A1A122E7310D0077E1E0 /* MPInterstitialAdDetailViewController.h */,
+				4780A1A222E7310D0077E1E0 /* MPMRectBannerAdDetailViewController.h */,
+				4780A1A322E7310D0077E1E0 /* MPNativeAdPlacerTableViewController.m */,
+				4780A1A422E7310D0077E1E0 /* MPNativeAdPlacerCollectionViewController.m */,
+				4780A1A522E7310D0077E1E0 /* MPBannerAdDetailViewController.h */,
+				4780A1A622E7310D0077E1E0 /* MPLeaderboardBannerAdDetailViewController.h */,
+				4780A1A722E7310D0077E1E0 /* MPNativeAdPlacerPageViewController.m */,
+				4780A1A822E7310D0077E1E0 /* MPRewardedVideoAdDetailViewController.m */,
+				4780A1A922E7310D0077E1E0 /* MPNativeAdDetailViewController.h */,
+				4780A1AA22E7310D0077E1E0 /* MPAdTableViewController.h */,
+				4780A1AB22E7310D0077E1E0 /* MPViewController.m */,
+				4780A1AC22E7310D0077E1E0 /* MPAdEntryViewController.h */,
+				4780A1AD22E7310D0077E1E0 /* MPAdEntryViewController.xib */,
+				4780A1AE22E7310D0077E1E0 /* MPNativeAdPlacerTableViewController.h */,
+				4780A1AF22E7310D0077E1E0 /* MPMRectBannerAdDetailViewController.m */,
+				4780A1B022E7310D0077E1E0 /* MPInterstitialAdDetailViewController.m */,
+				4780A1B122E7310D0077E1E0 /* MPNativeAdPlacerPageViewController.h */,
+				4780A1B222E7310D0077E1E0 /* MPLeaderboardBannerAdDetailViewController.m */,
+				4780A1B322E7310D0077E1E0 /* MPInterstitialAdDetailViewController.xib */,
+				4780A1B422E7310D0077E1E0 /* MPBannerAdDetailViewController.m */,
+				4780A1B522E7310D0077E1E0 /* MPNativeAdPlacerCollectionViewController.h */,
+				4780A1B622E7310D0077E1E0 /* MPNativeAdDetailViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4780A1BA22E7310D0077E1E0 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				4780A1BB22E7310D0077E1E0 /* MPAdSection.m */,
+				4780A1BC22E7310D0077E1E0 /* MPAdInfo.h */,
+				4780A1BD22E7310D0077E1E0 /* MPAdInfo.m */,
+				4780A1BE22E7310D0077E1E0 /* MPAdSection.h */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		97CA483F4DF365A6562F5BA8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F8C98D8FE81B5DD6969145D /* Pods-iOS Example.debug.xcconfig */,
+				A9C39A111D05999DD1081B63 /* Pods-iOS Example.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A3A14D30968459B3802E3636 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E292978D40A97790422EECC /* Pods_iOS_Example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +274,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4714898222E7104700623CDA /* Build configuration list for PBXNativeTarget "iOS Example" */;
 			buildPhases = (
+				D1A187FA7EE8765145082F43 /* [CP] Check Pods Manifest.lock */,
 				4714896822E7104600623CDA /* Sources */,
 				4714896922E7104600623CDA /* Frameworks */,
 				4714896A22E7104600623CDA /* Resources */,
+				A1EBB2EE540FEA38AF2B95B5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,22 +326,86 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4780A1D922E7310E0077E1E0 /* MPAdEntryViewController.xib in Resources */,
+				4780A1DD22E7310E0077E1E0 /* MPInterstitialAdDetailViewController.xib in Resources */,
 				4714897C22E7104700623CDA /* LaunchScreen.storyboard in Resources */,
 				4714897922E7104700623CDA /* Assets.xcassets in Resources */,
 				4714897722E7104600623CDA /* Main.storyboard in Resources */,
+				4780A1D122E7310E0077E1E0 /* MPBannerAdDetailViewController.xib in Resources */,
+				4780A1DF22E7310E0077E1E0 /* MPNativeAdDetailViewController.xib in Resources */,
+				4780A1C722E7310E0077E1E0 /* MPNativeAdTableHeaderView.xib in Resources */,
+				4780A1CF22E7310E0077E1E0 /* MPRewardedVideoAdDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A1EBB2EE540FEA38AF2B95B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS Example/Pods-iOS Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1A187FA7EE8765145082F43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4714896822E7104600623CDA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4714897422E7104600623CDA /* ViewController.m in Sources */,
+				4780A1DA22E7310E0077E1E0 /* MPMRectBannerAdDetailViewController.m in Sources */,
+				4780A1C522E7310E0077E1E0 /* MPNativeAdCell.m in Sources */,
+				4780A1DE22E7310E0077E1E0 /* MPBannerAdDetailViewController.m in Sources */,
+				4780A1D622E7310E0077E1E0 /* MPNativeAdPlacerPageViewController.m in Sources */,
+				4780A1E322E7310E0077E1E0 /* MPSampleAppInstanceProvider.m in Sources */,
+				4780A1DB22E7310E0077E1E0 /* MPInterstitialAdDetailViewController.m in Sources */,
+				4780A1E222E7310E0077E1E0 /* MoPubAppDelegate.m in Sources */,
+				4780A1D322E7310E0077E1E0 /* MPAdTableViewController.m in Sources */,
+				4780A1D722E7310E0077E1E0 /* MPRewardedVideoAdDetailViewController.m in Sources */,
+				4780A1D222E7310E0077E1E0 /* MPAdEntryViewController.m in Sources */,
+				4780A1DC22E7310E0077E1E0 /* MPLeaderboardBannerAdDetailViewController.m in Sources */,
+				4780A1E122E7310E0077E1E0 /* MPAdInfo.m in Sources */,
+				4780A1D822E7310E0077E1E0 /* MPViewController.m in Sources */,
+				4780A1D022E7310E0077E1E0 /* MPNativeAdDetailViewController.m in Sources */,
+				4780A1C422E7310E0077E1E0 /* MPNativeVideoTableViewAdPlacerView.m in Sources */,
+				4780A1C622E7310E0077E1E0 /* MPStaticNativeAdView.m in Sources */,
+				4780A1CA22E7310E0077E1E0 /* MPTableViewAdPlacerView.m in Sources */,
+				4780A1D422E7310E0077E1E0 /* MPNativeAdPlacerTableViewController.m in Sources */,
+				4780A1C322E7310E0077E1E0 /* MPNativeCollectionViewAdCollectionViewCell.m in Sources */,
+				4780A1E422E7310E0077E1E0 /* MPSampleAppLogReader.m in Sources */,
+				4780A1CE22E7310E0077E1E0 /* MPAdPersistenceManager.m in Sources */,
+				4780A1D522E7310E0077E1E0 /* MPNativeAdPlacerCollectionViewController.m in Sources */,
 				4714897F22E7104700623CDA /* main.m in Sources */,
-				4714897122E7104600623CDA /* AppDelegate.m in Sources */,
+				4780A1CD22E7310E0077E1E0 /* MPNativeVideoView.m in Sources */,
+				4780A1CB22E7310E0077E1E0 /* MPCollectionViewAdPlacerView.m in Sources */,
+				4780A1CC22E7310E0077E1E0 /* MPNativeAdTableHeaderView.m in Sources */,
+				4780A1C922E7310E0077E1E0 /* MPNativeAdPageView.m in Sources */,
+				4780A1E022E7310E0077E1E0 /* MPAdSection.m in Sources */,
+				4780A1C822E7310E0077E1E0 /* MPIndexPathPickerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +543,7 @@
 		};
 		4714898322E7104700623CDA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F8C98D8FE81B5DD6969145D /* Pods-iOS Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +560,7 @@
 		};
 		4714898422E7104700623CDA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9C39A111D05999DD1081B63 /* Pods-iOS Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
