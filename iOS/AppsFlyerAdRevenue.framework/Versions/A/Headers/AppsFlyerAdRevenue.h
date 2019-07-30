@@ -28,6 +28,7 @@ typedef NS_ENUM(NSUInteger, AFADRAdNetworkType) {
 @interface AppsFlyerAdRevenue : NSObject
 
 @property BOOL isDebug;
+@property BOOL isOnlyRecordImpressionData;
 
 + (instancetype)shared;
 
@@ -39,7 +40,6 @@ typedef NS_ENUM(NSUInteger, AFADRAdNetworkType) {
 - (void)trackEvent:(AFADREvent *)event;
 
 - (id)anyDelegate:(nonnull id)delegate adNetworkType:(AFADRAdNetworkType)adNetworkType;
-
 
 @end
 
