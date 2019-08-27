@@ -98,7 +98,7 @@ NSString *const kNativeAdDefaultActionViewKey = @"kNativeAdDefaultActionButtonKe
     [configurations addObject:nativeVideoConfig];
 
     MPNativeAdRequest *adRequest1 = [MPNativeAdRequest requestWithAdUnitIdentifier:self.info.ID rendererConfigurations:configurations];
-    MPNativeAdRequestTargeting *targeting = [[MPNativeAdRequestTargeting alloc] init];
+    MPNativeAdRequestTargeting *targeting = [[MPNativeAdRequestTargeting alloc] initWithCreativeSafeSize:CGSizeZero];
 
     targeting.keywords = self.keywordsTextField.text;
     adRequest1.targeting = targeting;
