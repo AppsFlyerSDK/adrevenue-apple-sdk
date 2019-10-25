@@ -4,7 +4,7 @@
 //
 //  Created by Andrii Hahan on 8/29/19.
 //  Copyright © 2019 AppsFlyer. All rights reserved.
-//
+//  v0.5.0
 
 #import <Foundation/Foundation.h>
 
@@ -40,6 +40,7 @@ typedef NS_ENUM(NSUInteger, AFADRAdNetworkType) {
 - (void)trackEvent:(AFADREvent *)event;
 
 - (id)anyDelegate:(nonnull id)delegate adNetworkType:(AFADRAdNetworkType)adNetworkType;
+
 
 @end
 
