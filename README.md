@@ -6,7 +6,8 @@
 - [Table of Contents](#table-of-contents)
 - [Background](#background)
 - [How it works](#how-it-works)
-
+- [Supported ad monetization network SDKs](#supported-ad-monetization-network-sdks)
+- [Integration](#integration)
 ### Background
 
 By attributing ad revenue, app owners gain the complete view of user LTV and campaign ROI. 
@@ -41,9 +42,61 @@ In other words, you no longer need to send a revenue event, we will find it ours
 
 ### Supported ad monetization network SDKs
 - [MoPub iOS](https://github.com/mopub/mopub-ios-sdk)
+- More ad monetization networks soon
 
+### Integration
+#### Cocoapods
+To integrate AdRevenue into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
+```ruby
+pod 'AppsFlyer-AdRevenue-###AdRevenue_mediator_name###'
+```
 
-TBD
-TBD
-TDB
+For MoPub it will looks like:
+
+```ruby
+pod 'AppsFlyer-AdRevenue-MoPub'
+```
+
+```objective-c
+@import AppsFlyerLib;
+@import AppsFlyerAdRevenue;
+
+...
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // Setup AppsFlyer
+    [[AppsFlyerTracker sharedTracker] setAppsFlyerDevKey:@"{dev-key}"];
+    [[AppsFlyerTracker sharedTracker] setAppleAppID:@"{apple-id}"];
+    [[AppsFlyerTracker sharedTracker] setIsDebug:YES];
+ 
+    // Setup AppsFlyerAdRevenue
+    [AppsFlyerAdRevenue start];
+    [[AppsFlyerAdRevenue shared] setIsDebug:YES];
+    //...
+}
+
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    [[AppsFlyerTracker sharedTracker] trackAppLaunch];
+}
+
+```
+
+In your UIViewController, where you use MoPub(Example) specify following:
+
+```objective-c
+@import AppsFlyerAdRevenue;
+```
+replace:
+
+```objective-c
+self.nativeAd.delegate = self;
+```
+to:
+
+```objective-c
+self.nativeAd.delegate = [[AppsFlyerAdRevenue shared]       
+                               anyDelegate:self 
+                             adNetworkType:AFADRMoPubAdNetworkType];
+```
+
+Note: All delegates will work for apllication.
