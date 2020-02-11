@@ -91,9 +91,12 @@ self.nativeAd.delegate = self;
 to:
 
 ```objective-c
-self.nativeAd.delegate = [[AppsFlyerAdRevenue shared]       
-                               anyDelegate:self 
-                             adNetworkType:AFADRMoPubAdNetworkType];
+self.nativeAd.delegate = [[AppsFlyerAdRevenue shared] delegate:self forProtocol:@protocol(MPNativeAdDelegate)];
+```
+
+```swift
+let delegate = AppsFlyerAdRevenue.shared().delegate(self, for: MPInterstitialAdControllerDelegate.self) as? MPInterstitialAdControllerDelegate
+interstitial.delegate = delegate;
 ```
 
 Note: All delegates will work for apllication.
