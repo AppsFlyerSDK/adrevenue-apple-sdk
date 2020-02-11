@@ -45,7 +45,7 @@
 
     self.interstitial = [[MPSampleAppInstanceProvider sharedProvider] buildMPInterstitialAdControllerWithAdUnitID:self.info.ID];
     // #import <AppsFlyer_AdRevenue/AppsFlyerAdRevenue.h>
-    id delegate = [[AppsFlyerAdRevenue shared] anyDelegate:self adNetworkType:AFADRMoPubAdNetworkType];
+    id delegate = [[AppsFlyerAdRevenue shared] delegate:self forProtocol:@protocol(MPInterstitialAdControllerDelegate)];
     self.interstitial.delegate = delegate;
 
     self.keywordsTextField.text = self.info.keywords;

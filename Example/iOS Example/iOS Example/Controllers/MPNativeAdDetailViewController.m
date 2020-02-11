@@ -116,7 +116,8 @@ NSString *const kNativeAdDefaultActionViewKey = @"kNativeAdDefaultActionButtonKe
             [self configureAdLoadFail];
         } else {
             self.nativeAd = response;
-            id delegate = [[AppsFlyerAdRevenue shared] anyDelegate:self adNetworkType:AFADRMoPubAdNetworkType];
+            id delegate = [[AppsFlyerAdRevenue shared] delegate:self forProtocol:@protocol(MPNativeAdDelegate)];
+                           
             self.nativeAd.delegate = delegate;
             [self displayAd];
             NSLog(@"Received Native Ad");

@@ -60,7 +60,7 @@ const NSUInteger kBeginningNumberOfPages = 8;
         MPNativeAdRendererConfiguration *config = [MPStaticNativeAdRenderer rendererConfigurationWithRendererSettings:settings];
         _streamAdPlacer = [MPStreamAdPlacer placerWithViewController:self adPositioning:positioning rendererConfigurations:@[config]];
         // #import <AppsFlyer_AdRevenue/AppsFlyerAdRevenue.h>
-        id delegate = [[AppsFlyerAdRevenue shared] anyDelegate:self adNetworkType:AFADRMoPubAdNetworkType];
+        id delegate = [[AppsFlyerAdRevenue shared] delegate:self forProtocol:@protocol(MPStreamAdPlacerDelegate)];
         _streamAdPlacer.delegate = delegate;
 
         // Create a bunch of alternating red/green view controllers.

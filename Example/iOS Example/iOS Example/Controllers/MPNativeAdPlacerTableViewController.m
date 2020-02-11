@@ -133,7 +133,7 @@ static NSString *kDefaultCellIdentifier = @"MoPubSampleAppTableViewAdPlacerCell"
      self.placer = [MPTableViewAdPlacer placerWithTableView:self.tableView viewController:self adPositioning:positioning rendererConfigurations:@[nativeAdConfig, nativeVideoConfig]];
      */
     // #import <AppsFlyer_AdRevenue/AppsFlyerAdRevenue.h>
-    id delegate = [[AppsFlyerAdRevenue shared] anyDelegate:self adNetworkType:AFADRMoPubAdNetworkType];
+    id delegate = [[AppsFlyerAdRevenue shared] delegate:self forProtocol:@protocol(MPTableViewAdPlacerDelegate)];
     self.placer.delegate = delegate;
     // Load ads (using a test ad unit ID). Feel free to replace this ad unit ID with your own.
     [self.placer loadAdsForAdUnitID:self.adInfo.ID targeting:targeting];

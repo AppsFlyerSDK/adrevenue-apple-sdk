@@ -46,7 +46,7 @@
     self.rewardPickerView.dataSource = self;
     self.rewardPickerView.delegate = self;
     self.keywordsTextField.text = self.info.keywords;
-    id delegate = [[AppsFlyerAdRevenue shared] anyDelegate:self adNetworkType:AFADRMoPubAdNetworkType];
+    id delegate = [[AppsFlyerAdRevenue shared] delegate:self forProtocol:@protocol(MPRewardedVideoDelegate)];
     [MPRewardedVideo setDelegate:delegate forAdUnitId:self.info.ID];
 
     [super viewDidLoad];

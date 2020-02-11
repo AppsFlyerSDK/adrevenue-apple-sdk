@@ -37,7 +37,7 @@
                                                                                      size:MOPUB_LEADERBOARD_SIZE];
     
     // #import <AppsFlyer_AdRevenue/AppsFlyerAdRevenue.h>
-    id delegate = [[AppsFlyerAdRevenue shared] anyDelegate:self adNetworkType:AFADRMoPubAdNetworkType];
+    id delegate = [[AppsFlyerAdRevenue shared] delegate:self forProtocol:@protocol(MPAdViewDelegate)];
     self.adView.delegate = delegate;
     self.adView.accessibilityLabel = @"leaderboard_banner";
     self.adView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;

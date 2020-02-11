@@ -107,7 +107,7 @@ static NSString *const kReuseIdentifier = @"cell";
     self.placer = [MPCollectionViewAdPlacer placerWithCollectionView:self.collectionView viewController:self adPositioning:positioning rendererConfigurations:@[config]];
      */
     // #import <AppsFlyer_AdRevenue/AppsFlyerAdRevenue.h>
-    id delegate = [[AppsFlyerAdRevenue shared] anyDelegate:self adNetworkType:AFADRMoPubAdNetworkType];
+    id delegate = [[AppsFlyerAdRevenue shared] delegate:self forProtocol:@protocol(MPCollectionViewAdPlacerDelegate)];
     self.placer.delegate = delegate;
     // Load ads (using a test ad unit ID). Feel free to replace this ad unit ID with your own.
     [self.placer loadAdsForAdUnitID:self.adInfo.ID targeting:targeting];
