@@ -40,7 +40,7 @@ typedef NS_ENUM(NSUInteger, AFADRAdNetworkType) {
 - (void)trackEvent:(AFADREvent *)event;
 
 - (id)anyDelegate:(nonnull id)delegate adNetworkType:(AFADRAdNetworkType)adNetworkType;
-
+- (id)delegate:(id)delegate forProtocol:(Protocol *)protocol;
 
 @end
 

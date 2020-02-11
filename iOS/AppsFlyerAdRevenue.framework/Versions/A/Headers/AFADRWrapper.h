@@ -19,10 +19,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AFADRWrapper : AFADRObject
 
-@property (nonatomic, copy) NSArray *underlyingDelegates;
+@property (nonatomic, copy) NSSet *underlyingDelegates;
 @property (nonatomic, weak) id owner;
 
 + (instancetype)wrapperWithAdNetworkType:(NSUInteger)adNetworkType;
++ (instancetype)wrapperWithProtocol:(Protocol *)protocol owner:(id)owner;
 
 - (NSString *)AdReveueWrapperType;
 
