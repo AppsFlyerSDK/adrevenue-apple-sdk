@@ -54,6 +54,7 @@
     sdkConfig.loggingLevel = MPBLogLevelInfo;
     [[MoPub sharedInstance] initializeSdkWithConfiguration:sdkConfig completion:^{
         NSLog(@"SDK initialization complete");
+        NSLog(@"MoPub version: %@", [[MoPub sharedInstance] version]);
     }];
 
     return YES;
