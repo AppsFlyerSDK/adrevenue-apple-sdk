@@ -13,7 +13,7 @@ AppsFlyer-AdRevenue description. Description will be added shortly.
   s.static_framework = true
   s.module_name = 'AppsFlyerAdRevenue'
   
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
 
   s.vendored_frameworks = 'iOS/AppsFlyerAdRevenue.framework'
   s.dependency 'AppsFlyerFramework', '~> 5.4.0'
