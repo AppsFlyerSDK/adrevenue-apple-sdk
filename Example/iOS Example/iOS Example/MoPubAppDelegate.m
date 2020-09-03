@@ -30,9 +30,9 @@
 {
     NSLog(@"This device's advertisingIdentifier: %@", [MPIdentityProvider identifier]);
     
-    [[AppsFlyerTracker sharedTracker] setAppsFlyerDevKey:@"H9xZweqPFhzBEtiDh2vDj"];
-    [[AppsFlyerTracker sharedTracker] setAppleAppID:@"1427570452"];
-    [[AppsFlyerTracker sharedTracker] setIsDebug:YES];
+    [[AppsFlyerLib shared] setAppsFlyerDevKey:@"H9xZweqPFhzBEtiDh2vDj"];
+    [[AppsFlyerLib shared] setAppleAppID:@"1427570452"];
+    [[AppsFlyerLib shared] setIsDebug:YES];
     
     [AppsFlyerAdRevenue start];
     [[AppsFlyerAdRevenue shared] setIsDebug:YES];
