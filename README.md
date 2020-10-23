@@ -62,9 +62,9 @@ pod 'AppsFlyer-AdRevenue-MoPub'
 ...
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Setup AppsFlyer
-    [[AppsFlyerTracker sharedTracker] setAppsFlyerDevKey:@"{dev-key}"];
-    [[AppsFlyerTracker sharedTracker] setAppleAppID:@"{apple-id}"];
-    [[AppsFlyerTracker sharedTracker] setIsDebug:YES];
+    [[AppsFlyerLib shared] setAppsFlyerDevKey:@"{dev-key}"];
+    [[AppsFlyerLib shared] setAppleAppID:@"{apple-id}"];
+    [[AppsFlyerLib shared] setIsDebug:YES];
  
     // Setup AppsFlyerAdRevenue
     [AppsFlyerAdRevenue start];
@@ -73,7 +73,7 @@ pod 'AppsFlyer-AdRevenue-MoPub'
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    [[AppsFlyerTracker sharedTracker] trackAppLaunch];
+    [[AppsFlyerLib shared] start];
 }
 
 ```
