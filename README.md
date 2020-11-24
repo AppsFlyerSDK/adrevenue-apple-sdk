@@ -100,3 +100,9 @@ interstitial.delegate = delegate;
 ```
 
 Note: All delegates will work for apllication.
+
+
+
+
+
+
