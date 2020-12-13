@@ -26,9 +26,7 @@
 
 @implementation MoPubAppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    NSLog(@"This device's advertisingIdentifier: %@", [MPIdentityProvider identifier]);
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [[AppsFlyerLib shared] setAppsFlyerDevKey:@"H9xZweqPFhzBEtiDh2vDj"];
     [[AppsFlyerLib shared] setAppleAppID:@"1427570452"];

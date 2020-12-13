@@ -16,8 +16,6 @@
 #import "MPNativeAdDelegate.h"
 #import "MPStaticNativeAdRenderer.h"
 #import "MPStaticNativeAdRendererSettings.h"
-#import "MOPUBNativeVideoAdRendererSettings.h"
-#import "MOPUBNativeVideoAdRenderer.h"
 #import "MPNativeVideoView.h"
 
 @import AppsFlyerAdRevenue;
@@ -86,16 +84,6 @@ NSString *const kNativeAdDefaultActionViewKey = @"kNativeAdDefaultActionButtonKe
 
     MPNativeAdRendererConfiguration *config = [MPStaticNativeAdRenderer rendererConfigurationWithRendererSettings:settings];
     NSMutableArray * configurations = [NSMutableArray arrayWithObject:config];
-
-    // Video configuration. You don't need to create nativeVideoAdSettings and nativeVideoConfig unless you are using native video ads.
-    MOPUBNativeVideoAdRendererSettings *nativeVideoAdSettings = [[MOPUBNativeVideoAdRendererSettings alloc] init];
-    nativeVideoAdSettings.renderingViewClass = [MPNativeVideoView class];
-    nativeVideoAdSettings.viewSizeHandler = ^(CGFloat maximumWidth) {
-        return CGSizeMake(maximumWidth, 312.0f);
-    };
-
-    MPNativeAdRendererConfiguration *nativeVideoConfig = [MOPUBNativeVideoAdRenderer rendererConfigurationWithRendererSettings:nativeVideoAdSettings];
-    [configurations addObject:nativeVideoConfig];
 
     MPNativeAdRequest *adRequest1 = [MPNativeAdRequest requestWithAdUnitIdentifier:self.info.ID rendererConfigurations:configurations];
     MPNativeAdRequestTargeting *targeting = [[MPNativeAdRequestTargeting alloc] initWithCreativeSafeSize:CGSizeZero];
