@@ -53,12 +53,15 @@
                                                                              error:nil];
 
     if (self.warmingUpAlertView == nil && [regex numberOfMatchesInString:message options:0 range:NSMakeRange(0, message.length)] > 0) {
-        self.warmingUpAlertView = [[UIAlertView alloc] initWithTitle:@"Warming Up"
-                                                             message:message
-                                                            delegate:self
-                                                   cancelButtonTitle:@"OK"
-                                                   otherButtonTitles:nil];
-        [self.warmingUpAlertView show];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.warmingUpAlertView = [[UIAlertView alloc] initWithTitle:@"Warming Up"
+                                                                 message:message
+                                                                delegate:self
+                                                       cancelButtonTitle:@"OK"
+                                                       otherButtonTitles:nil];
+            [self.warmingUpAlertView show];
+        });
+        
     }
 }
 
