@@ -1,0 +1,6 @@
+framework module AppsFlyerAdRevenue {
+    umbrella header "AppsFlyerAdRevenue.h"
+
+    export *
+    module * { export * }
+}

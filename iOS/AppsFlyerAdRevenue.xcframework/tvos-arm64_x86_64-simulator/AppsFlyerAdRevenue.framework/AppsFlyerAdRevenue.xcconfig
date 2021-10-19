@@ -1,0 +1,11 @@
+#include "Shared/Platform/iOS.xcconfig"
+#include "Shared/Target/StaticFramework.xcconfig"
+#include "Shared/Version.xcconfig"
+
+PRODUCT_NAME = AppsFlyerAdRevenue
+PRODUCT_BUNDLE_IDENTIFIER = com.appsflyer.adrevenue.lib
+
+CURRENT_PROJECT_VERSION = $(AFSDK_PROJECT_VERSION)
+
+INFOPLIST_FILE = $(SRCROOT)/AppsFlyerAdRevenue/Info.plist
+MODULEMAP_FILE = $(SRCROOT)/AppsFlyerAdRevenue/AppsFlyerAdRevenue.modulemap
