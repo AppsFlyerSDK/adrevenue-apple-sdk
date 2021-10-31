@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'AppsFlyer-AdRevenue'
-  s.version          = '6.3.1'
+  s.version          = '6.4.0'
   s.summary          = 'The meaningful summary of AppsFlyer-AdRevenue.'
   s.description      = <<-DESC
 AppsFlyer-AdRevenue description. Description will be added shortly.
@@ -15,9 +15,7 @@ AppsFlyer-AdRevenue description. Description will be added shortly.
   
   s.ios.deployment_target = '10.0'
 
-  s.vendored_frameworks = 'iOS/AppsFlyerAdRevenue.framework'
-  s.dependency 'AppsFlyerFramework', '~> 6.3.0'
-  s.pod_target_xcconfig  = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 arm64e armv7 armv7s', 'EXCLUDED_ARCHS[sdk=iphoneos*]' => 'i386 x86_64' }
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 arm64e armv7 armv7s', 'EXCLUDED_ARCHS[sdk=iphoneos*]' => 'i386 x86_64' }
+  s.vendored_frameworks = 'iOS/AppsFlyerAdRevenue.xcframework'
+  s.dependency 'AppsFlyerFramework', '~> 6.4.0'
 
 end
