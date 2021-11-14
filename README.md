@@ -48,6 +48,31 @@ To integrate AdRevenue into your Xcode project using CocoaPods, specify it in yo
 ```ruby
 pod 'AppsFlyer-AdRevenue-###AdRevenue_mediator_name###'
 ```
+## AdRevenue-Generic
+From version `6.4.2` AppsFlyer-AdRevenue provides additional new api that allow you send data from the impression payload to AdRevenue no matter which mediation network you use:<br>
+```objective-c
+ NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
+    dictionary[kAppsFlyerAdRevenueCountry] = @"il"
+    dictionary[kAppsFlyerAdRevenueAdUnit] = @"02134568"
+    dictionary[kAppsFlyerAdRevenueAdType] = @"Banner"
+    dictionary[kAppsFlyerAdRevenuePlacement] = @"place"
+    dictionary[kAppsFlyerAdRevenueECPMPayload] = @"encrypt"
+    dictionary[@"foo"] = @"testcustom"
+    dictionary[@"bar"] = @"testcustom2"
+
+    
+    [[AppsFlyerAdRevenue shared] logAdRevenueWithMonetizationNetwork:@"facebook"
+                                                    mediationNetwork:AppsFlyerAdRevenueMediationNetworkTypeMoPub
+                                                        eventRevenue:@(0.026)
+                                                     revenueCurrency:@"USD"
+                                                additionalParameters:dictionary];
+```
+
+To integrate AdRevenue into your Xcode project using CocoaPods, specify it in your `Podfile`:
+```ruby
+pod 'AppsFlyer-AdRevenue'
+```
+Do the initialization process described in the [MoPub iOS](https://github.com/mopub/mopub-ios-sdk) section.
 
 ## MoPub
 To integrate AdRevenue into your Xcode project using CocoaPods, specify it in your `Podfile`:
