@@ -16,6 +16,44 @@ typedef NS_ENUM(NSUInteger, AFADRAdNetworkType) {
     AFADRMoPubAdNetworkType
 };
 
+typedef NS_CLOSED_ENUM(NSUInteger, AppsFlyerAdRevenueMediationNetworkType) {
+    AppsFlyerAdRevenueMediationNetworkTypeNone,
+    AppsFlyerAdRevenueMediationNetworkTypeGoogleAdMob,
+    AppsFlyerAdRevenueMediationNetworkTypeMoPub,
+    AppsFlyerAdRevenueMediationNetworkTypeIronSource,
+    AppsFlyerAdRevenueMediationNetworkTypeApplovinMax,
+    AppsFlyerAdRevenueMediationNetworkTypeFyber,
+    AppsFlyerAdRevenueMediationNetworkTypeAppodeal,
+    AppsFlyerAdRevenueMediationNetworkTypeAdmost,
+    AppsFlyerAdRevenueMediationNetworkTypeTopon,
+    AppsFlyerAdRevenueMediationNetworkTypeTradplus,
+    AppsFlyerAdRevenueMediationNetworkTypeYandex,
+} NS_SWIFT_NAME(MediationNetworkType);
+
+#define kAppsFlyerAdRevenueMonetizationNetwork         @"monetization_network"
+#define kAppsFlyerAdRevenueMediationNetwork            @"mediation_network"
+#define kAppsFlyerAdRevenueEventRevenue                @"event_revenue"
+#define kAppsFlyerAdRevenueEventRevenueCurrency        @"event_revenue_currency"
+#define kAppsFlyerAdRevenueCustomParameters            @"custom_parameters"
+#define kAppsFlyerAdRevenueEncryptedCPM                @"encryptedCPM"
+
+//Pre-defined keys for non-mandatory dictionary
+//Code ISO 3166-1 format
+#define kAppsFlyerAdRevenueCountry                     @"country"
+
+//ID of the ad unit for the impression
+#define kAppsFlyerAdRevenueAdUnit                      @"ad_unit"
+
+//Format of the ad
+#define kAppsFlyerAdRevenueAdType                      @"ad_type"
+
+//ID of the ad placement for the impression
+#define kAppsFlyerAdRevenuePlacement                   @"placement"
+
+//Provided by Facebook Audience Network only, and will be reported to publishers
+//approved by Facebook Audience Network within the closed beta
+#define kAppsFlyerAdRevenueECPMPayload                 @"ecpm_payload"
+
 @class AFADREvent;
 @class AFADRWrapper;
 
@@ -42,6 +80,26 @@ typedef NS_ENUM(NSUInteger, AFADRAdNetworkType) {
 - (id)anyDelegate:(nonnull id)delegate adNetworkType:(AFADRAdNetworkType)adNetworkType;
 - (id)delegate:(id)delegate forProtocol:(Protocol *)protocol;
 
+/**
+ * An API to provide the data from the impression payload to AdRevenue
+ *
+ * @param monetizationNetwork  network which monetized the impression (@"facebook")
+ * @param mediationNetwork     mediation source that mediated the monetization network for the impression (AppsFlyerAdRevenueMediationNetworkTypeGoogleAdMob)
+ * @param eventRevenue         reported impression’s revenue (@(0.001994303))
+ * @param revenueCurrency reported impression’s revenue currency ISO 4217 format (@"USD")
+ * @param additionalParameters         non-mandatory dictionary which can include pre-defined keys (kAppsFlyerAdRevenueCountry, etc)
+ */
+- (void)logAdRevenueWithMonetizationNetwork:(NSString * _Nonnull)monetizationNetwork
+                           mediationNetwork:(AppsFlyerAdRevenueMediationNetworkType)mediationNetwork
+                               eventRevenue:(NSNumber * _Nonnull)eventRevenue
+                            revenueCurrency:(NSString * _Nonnull)revenueCurrency
+                       additionalParameters:(NSDictionary * _Nullable)additionalParameters
+NS_SWIFT_NAME(logAdRevenue(monetizationNetwork:mediationNetwork:eventRevenue:revenueCurrency:additionalParameters:));
+
 @end
+
+
+
+
 
 NS_ASSUME_NONNULL_END
