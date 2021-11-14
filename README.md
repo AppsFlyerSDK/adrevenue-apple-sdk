@@ -72,7 +72,7 @@ To integrate AdRevenue into your Xcode project using CocoaPods, specify it in yo
 ```ruby
 pod 'AppsFlyer-AdRevenue'
 ```
-Do the initialization process described in the [MoPub iOS](https://github.com/mopub/mopub-ios-sdk) section.
+Do the initialization process described in the MoPub iOS section.
 
 ## MoPub
 To integrate AdRevenue into your Xcode project using CocoaPods, specify it in your `Podfile`:
