@@ -49,25 +49,43 @@ To integrate AdRevenue into your Xcode project using CocoaPods, specify it in yo
 pod 'AppsFlyer-AdRevenue-###AdRevenue_mediator_name###'
 ```
 ## AdRevenue-Generic
-From version `6.4.2` AppsFlyer-AdRevenue provides additional new api that allow you send data from the impression payload to AdRevenue no matter which mediation network you use:<br>
+### `logAdRevenue` <br>
+Allow you send data from the impression payload to AdRevenue no matter which mediation network you use:<br>
 ```objective-c
- NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
-    dictionary[kAppsFlyerAdRevenueCountry] = @"il"
-    dictionary[kAppsFlyerAdRevenueAdUnit] = @"02134568"
-    dictionary[kAppsFlyerAdRevenueAdType] = @"Banner"
-    dictionary[kAppsFlyerAdRevenuePlacement] = @"place"
-    dictionary[kAppsFlyerAdRevenueECPMPayload] = @"encrypt"
-    dictionary[@"foo"] = @"testcustom"
-    dictionary[@"bar"] = @"testcustom2"
-
+NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
+dictionary[kAppsFlyerAdRevenueCountry] = @"il"
+dictionary[kAppsFlyerAdRevenueAdUnit] = @"02134568"
+dictionary[kAppsFlyerAdRevenueAdType] = @"Banner"
+dictionary[kAppsFlyerAdRevenuePlacement] = @"place"
+dictionary[kAppsFlyerAdRevenueECPMPayload] = @"encrypt"
+dictionary[@"foo"] = @"testcustom"
+dictionary[@"bar"] = @"testcustom2"
     
-    [[AppsFlyerAdRevenue shared] logAdRevenueWithMonetizationNetwork:@"facebook"
-                                                    mediationNetwork:AppsFlyerAdRevenueMediationNetworkTypeMoPub
-                                                        eventRevenue:@(0.026)
-                                                     revenueCurrency:@"USD"
-                                                additionalParameters:dictionary];
+[[AppsFlyerAdRevenue shared] logAdRevenueWithMonetizationNetwork:@"facebook"
+                                                mediationNetwork:AppsFlyerAdRevenueMediationNetworkTypeMoPub
+                                                    eventRevenue:@(0.026)
+                                                 revenueCurrency:@"USD"
+                                            additionalParameters:dictionary];
 ```
-
+### `logAdImpression` <br>
+Allow you to send Ad Impression data to AppsFlyer without revenue<br>
+**Note:** The `additionalParameters` dictionary can include the following keys only:<br>
+`kAppsFlyerAdRevenueAdUnit`: The ID of the ad unit for the impression.<br>
+`kAppsFlyerAdRevenuePlacement`: The ID of the ad placement for the impression.<br>
+`kAppsFlyerAdRevenueECPMPayload`: Provided by Facebook Audience Network only, and will be reported to publishers approved by Facebook Audience Network within the closed beta.<br>
+`kAppsFlyerAdRevenueCustomData`: Data set by the advertiser in the SDK and most often used for integration with third-parties, Audiences, and so on.<br>
+```objective-c
+NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
+dictionary[kAppsFlyerAdRevenueAdUnit] = @"02134568";
+dictionary[kAppsFlyerAdRevenuePlacement] = @"place";
+dictionary[kAppsFlyerAdRevenueECPMPayload] = @"encrypt";
+dictionary[kAppsFlyerAdRevenueCustomData] = @"dummy data";
+    
+[[AppsFlyerAdRevenue shared] logAdImpressionWithMonetizationNetwork:@"facebook"
+                                                             adType:@"banner"
+                                                            country:@"fr"
+                                               additionalParameters:dictionary];
+```
 To integrate AdRevenue into your Xcode project using CocoaPods, specify it in your `Podfile`:
 ```ruby
 pod 'AppsFlyer-AdRevenue'
