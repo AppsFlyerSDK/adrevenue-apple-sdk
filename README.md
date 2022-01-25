@@ -41,14 +41,38 @@ In other words, you no longer need to send a revenue event, we will find it ours
 - [MoPub iOS](https://github.com/mopub/mopub-ios-sdk)
 - [AdMob iOS](https://github.com/AppsFlyerSDK/adrevenue-apple-admob)
 
-## Integration
-#### Cocoapods
-To integrate AdRevenue into your Xcode project using CocoaPods, specify it in your `Podfile`:
-
-```ruby
-pod 'AppsFlyer-AdRevenue-###AdRevenue_mediator_name###'
-```
 ## AdRevenue-Generic
+To integrate AdRevenue into your Xcode project using CocoaPods, specify it in your `Podfile`:
+```ruby
+pod 'AppsFlyer-AdRevenue'
+```
+```objective-c
+@import AppsFlyerLib;
+@import AppsFlyerAdRevenue;
+
+...
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // Setup AppsFlyer
+    [[AppsFlyerLib shared] setAppsFlyerDevKey:@"{dev-key}"];
+    [[AppsFlyerLib shared] setAppleAppID:@"{apple-id}"];
+    [[AppsFlyerLib shared] setIsDebug:YES];
+ 
+    // Setup AppsFlyerAdRevenue
+    [AppsFlyerAdRevenue start];
+    [[AppsFlyerAdRevenue shared] setIsDebug:YES];
+    //...
+}
+
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    [[AppsFlyerLib shared] start];
+}
+
+```
+In your UIViewController, where you want to send data to AdRevenue specify following:
+
+```objective-c
+@import AppsFlyerAdRevenue;
+```
 ### `logAdRevenue` <br>
 Allow you send data from the impression payload to AdRevenue no matter which mediation network you use:<br>
 ```objective-c
@@ -92,7 +116,6 @@ To integrate AdRevenue into your Xcode project using CocoaPods, specify it in yo
 ```ruby
 pod 'AppsFlyer-AdRevenue'
 ```
-Do the initialization process described in the MoPub iOS section.
 
 ## MoPub
 To integrate AdRevenue into your Xcode project using CocoaPods, specify it in your `Podfile`:
