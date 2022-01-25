@@ -7,7 +7,6 @@
 - [Background](#background)
 - [How it works](#how-it-works)
 - [Supported ad monetization network SDKs](#supported-ad-monetization-network-sdks)
-- [Integration](#integration)
 ### Background
 
 By attributing ad revenue, app owners gain the complete view of user LTV and campaign ROI. 
@@ -111,10 +110,6 @@ dictionary[kAppsFlyerAdRevenueCustomData] = @"dummy data";
                                                              adType:@"banner"
                                                             country:@"fr"
                                                additionalParameters:dictionary];
-```
-To integrate AdRevenue into your Xcode project using CocoaPods, specify it in your `Podfile`:
-```ruby
-pod 'AppsFlyer-AdRevenue'
 ```
 
 ## MoPub
