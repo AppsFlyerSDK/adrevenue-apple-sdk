@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'AppsFlyer-AdRevenue'
-  s.version          = '6.4.2'
+  s.version          = '6.5.2'
   s.summary          = 'The meaningful summary of AppsFlyer-AdRevenue.'
   s.description      = <<-DESC
 AppsFlyer-AdRevenue description. Description will be added shortly.
@@ -16,6 +16,6 @@ AppsFlyer-AdRevenue description. Description will be added shortly.
   s.ios.deployment_target = '10.0'
 
   s.vendored_frameworks = 'iOS/AppsFlyerAdRevenue.xcframework'
-  s.dependency 'AppsFlyerFramework', '~> 6.4.0'
+  s.dependency 'AppsFlyerFramework', '~> 6.5.0'
 
 end
