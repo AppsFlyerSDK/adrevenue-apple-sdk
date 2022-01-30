@@ -28,6 +28,8 @@ typedef NS_CLOSED_ENUM(NSUInteger, AppsFlyerAdRevenueMediationNetworkType) {
     AppsFlyerAdRevenueMediationNetworkTypeTopon,
     AppsFlyerAdRevenueMediationNetworkTypeTradplus,
     AppsFlyerAdRevenueMediationNetworkTypeYandex,
+    AppsFlyerAdRevenueMediationNetworkTypeChartBoost,
+    AppsFlyerAdRevenueMediationNetworkTypeUnity,
 } NS_SWIFT_NAME(MediationNetworkType);
 
 #define kAppsFlyerAdRevenueMonetizationNetwork         @"monetization_network"
@@ -35,9 +37,9 @@ typedef NS_CLOSED_ENUM(NSUInteger, AppsFlyerAdRevenueMediationNetworkType) {
 #define kAppsFlyerAdRevenueEventRevenue                @"event_revenue"
 #define kAppsFlyerAdRevenueEventRevenueCurrency        @"event_revenue_currency"
 #define kAppsFlyerAdRevenueCustomParameters            @"custom_parameters"
-#define kAppsFlyerAdRevenueEncryptedCPM                @"encryptedCPM"
 
 //Pre-defined keys for non-mandatory dictionary
+
 //Code ISO 3166-1 format
 #define kAppsFlyerAdRevenueCountry                     @"country"
 
@@ -53,6 +55,11 @@ typedef NS_CLOSED_ENUM(NSUInteger, AppsFlyerAdRevenueMediationNetworkType) {
 //Provided by Facebook Audience Network only, and will be reported to publishers
 //approved by Facebook Audience Network within the closed beta
 #define kAppsFlyerAdRevenueECPMPayload                 @"ecpm_payload"
+
+//Data set by the advertiser in the SDK and most often used for integration
+//with third-parties, Audiences, and so on
+#define kAppsFlyerAdRevenueCustomData                 @"custom_data"
+
 
 @class AFADREvent;
 @class AFADRWrapper;
@@ -95,6 +102,20 @@ typedef NS_CLOSED_ENUM(NSUInteger, AppsFlyerAdRevenueMediationNetworkType) {
                             revenueCurrency:(NSString * _Nonnull)revenueCurrency
                        additionalParameters:(NSDictionary * _Nullable)additionalParameters
 NS_SWIFT_NAME(logAdRevenue(monetizationNetwork:mediationNetwork:eventRevenue:revenueCurrency:additionalParameters:));
+
+/**
+ * An API to send Ad Impression data to AppsFlyer without revenue
+ *
+ * @param monetizationNetwork  network which monetized the impression (@"facebook")
+ * @param adType                format of the ad (@"banner")
+ * @param country               Code ISO 3166-1 format (@"fr")
+ * @param additionalParameters  non-mandatory dictionary which can include pre-defined keys (kAppsFlyerAdRevenueCustomData, etc)
+ */
+- (void)logAdImpressionWithMonetizationNetwork:(NSString * _Nonnull)monetizationNetwork
+                                        adType:(NSString * _Nonnull)adType
+                                       country:(NSString * _Nonnull)country
+                          additionalParameters:(NSDictionary * _Nullable)additionalParameters
+NS_SWIFT_NAME(logAdImpression(monetizationNetwork:adType:country:additionalParameters:));
 
 @end
 
