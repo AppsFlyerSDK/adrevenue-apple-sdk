@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/AppsFlyerAdRevenue.h</key>
 		<data>
-		+ofSxHny64MoMrL3rPkCeLez00k=
+		nf1EUB1PFf1t4m2jf+HPa5q+cNc=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -122,11 +122,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+ofSxHny64MoMrL3rPkCeLez00k=
+			nf1EUB1PFf1t4m2jf+HPa5q+cNc=
 			</data>
 			<key>hash2</key>
 			<data>
-			mJ9PWuTHWN2Aoqa/DuPSkr+0lR9AVg4ko31RdTUPvrU=
+			uWSbysQsUTu4fxK0YnWJrPHq8pGtTTjdzDn50FI9Suc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

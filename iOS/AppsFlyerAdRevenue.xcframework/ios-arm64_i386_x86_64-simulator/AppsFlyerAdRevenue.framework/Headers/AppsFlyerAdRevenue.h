@@ -56,10 +56,6 @@ typedef NS_CLOSED_ENUM(NSUInteger, AppsFlyerAdRevenueMediationNetworkType) {
 //approved by Facebook Audience Network within the closed beta
 #define kAppsFlyerAdRevenueECPMPayload                 @"ecpm_payload"
 
-//Data set by the advertiser in the SDK and most often used for integration
-//with third-parties, Audiences, and so on
-#define kAppsFlyerAdRevenueCustomData                 @"custom_data"
-
 
 @class AFADREvent;
 @class AFADRWrapper;
@@ -102,20 +98,6 @@ typedef NS_CLOSED_ENUM(NSUInteger, AppsFlyerAdRevenueMediationNetworkType) {
                             revenueCurrency:(NSString * _Nonnull)revenueCurrency
                        additionalParameters:(NSDictionary * _Nullable)additionalParameters
 NS_SWIFT_NAME(logAdRevenue(monetizationNetwork:mediationNetwork:eventRevenue:revenueCurrency:additionalParameters:));
-
-/**
- * An API to send Ad Impression data to AppsFlyer without revenue
- *
- * @param monetizationNetwork  network which monetized the impression (@"facebook")
- * @param adType                format of the ad (@"banner")
- * @param country               Code ISO 3166-1 format (@"fr")
- * @param additionalParameters  non-mandatory dictionary which can include pre-defined keys (kAppsFlyerAdRevenueCustomData, etc)
- */
-- (void)logAdImpressionWithMonetizationNetwork:(NSString * _Nonnull)monetizationNetwork
-                                        adType:(NSString * _Nonnull)adType
-                                       country:(NSString * _Nonnull)country
-                          additionalParameters:(NSDictionary * _Nullable)additionalParameters
-NS_SWIFT_NAME(logAdImpression(monetizationNetwork:adType:country:additionalParameters:));
 
 @end
 
