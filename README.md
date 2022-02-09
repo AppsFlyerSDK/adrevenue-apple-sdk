@@ -90,27 +90,6 @@ dictionary[@"bar"] = @"testcustom2"
                                                  revenueCurrency:@"USD"
                                             additionalParameters:dictionary];
 ```
-### `logAdImpression` <br>
-Allow you to send Ad Impression data to AppsFlyer without revenue<br>
-**Note:** The `additionalParameters` dictionary can include the following keys only:<br>
-| Key                              | Description                                                                                                                                 |
-|----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `kAppsFlyerAdRevenueAdUnit`      | The ID of the ad unit for the impression                                                                                                    |
-| `kAppsFlyerAdRevenuePlacement`   | The ID of the ad placement for the impression                                                                                               |
-| `kAppsFlyerAdRevenueECPMPayload` | Provided by Facebook Audience Network only, and will be reported to publishers approved by Facebook Audience Network within the closed beta |
-| `kAppsFlyerAdRevenueCustomData`  | Data set by the advertiser in the SDK and most often used for integration with third-parties, Audiences, and so on                          |
-```objective-c
-NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
-dictionary[kAppsFlyerAdRevenueAdUnit] = @"02134568";
-dictionary[kAppsFlyerAdRevenuePlacement] = @"place";
-dictionary[kAppsFlyerAdRevenueECPMPayload] = @"encrypt";
-dictionary[kAppsFlyerAdRevenueCustomData] = @"dummy data";
-    
-[[AppsFlyerAdRevenue shared] logAdImpressionWithMonetizationNetwork:@"facebook"
-                                                             adType:@"banner"
-                                                            country:@"fr"
-                                               additionalParameters:dictionary];
-```
 
 ## MoPub
 To integrate AdRevenue into your Xcode project using CocoaPods, specify it in your `Podfile`:
