@@ -37,7 +37,6 @@ In other words, you no longer need to send a revenue event, we will find it ours
 ```
 
 ### Supported ad monetization network SDKs
-- [MoPub iOS](https://github.com/mopub/mopub-ios-sdk)
 - [AdMob iOS](https://github.com/AppsFlyerSDK/adrevenue-apple-admob)
 
 ## AdRevenue-Generic
@@ -91,58 +90,7 @@ dictionary[@"bar"] = @"testcustom2"
                                             additionalParameters:dictionary];
 ```
 
-## MoPub
-To integrate AdRevenue into your Xcode project using CocoaPods, specify it in your `Podfile`:
-```ruby
-pod 'AppsFlyer-AdRevenue-MoPub'
-```
-
-```objective-c
-@import AppsFlyerLib;
-@import AppsFlyerAdRevenue;
-
-...
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Setup AppsFlyer
-    [[AppsFlyerLib shared] setAppsFlyerDevKey:@"{dev-key}"];
-    [[AppsFlyerLib shared] setAppleAppID:@"{apple-id}"];
-    [[AppsFlyerLib shared] setIsDebug:YES];
- 
-    // Setup AppsFlyerAdRevenue
-    [AppsFlyerAdRevenue start];
-    [[AppsFlyerAdRevenue shared] setIsDebug:YES];
-    //...
-}
-
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    [[AppsFlyerLib shared] start];
-}
-
-```
-
-In your UIViewController, where you use MoPub(Example) specify following:
-
-```objective-c
-@import AppsFlyerAdRevenue;
-```
-replace:
-
-```objective-c
-self.nativeAd.delegate = self;
-```
-to:
-
-```objective-c
-self.nativeAd.delegate = [[AppsFlyerAdRevenue shared] delegate:self forProtocol:@protocol(MPNativeAdDelegate)];
-```
-
-```swift
-let delegate = AppsFlyerAdRevenue.shared().delegate(self, for: MPInterstitialAdControllerDelegate.self) as? MPInterstitialAdControllerDelegate
-interstitial.delegate = delegate;
-```
-
-Note: All delegates will work for apllication.
-
+## MoPub - Deprecated
 ## AdMob
 To integrate AdRevenue into your Xcode project using CocoaPods, specify it in your `Podfile`:
 ```ruby
