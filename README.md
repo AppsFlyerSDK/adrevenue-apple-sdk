@@ -84,13 +84,12 @@ dictionary[@"foo"] = @"testcustom"
 dictionary[@"bar"] = @"testcustom2"
     
 [[AppsFlyerAdRevenue shared] logAdRevenueWithMonetizationNetwork:@"facebook"
-                                                mediationNetwork:AppsFlyerAdRevenueMediationNetworkTypeMoPub
+                                                mediationNetwork:AppsFlyerAdRevenueMediationNetworkTypeAdMob
                                                     eventRevenue:@(0.026)
                                                  revenueCurrency:@"USD"
                                             additionalParameters:dictionary];
 ```
 
-## MoPub - Deprecated
 ## AdMob
 To integrate AdRevenue into your Xcode project using CocoaPods, specify it in your `Podfile`:
 ```ruby
