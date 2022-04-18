@@ -17,19 +17,17 @@ typedef NS_ENUM(NSUInteger, AFADRAdNetworkType) {
 };
 
 typedef NS_CLOSED_ENUM(NSUInteger, AppsFlyerAdRevenueMediationNetworkType) {
-    AppsFlyerAdRevenueMediationNetworkTypeNone,
-    AppsFlyerAdRevenueMediationNetworkTypeGoogleAdMob,
-    AppsFlyerAdRevenueMediationNetworkTypeMoPub,
-    AppsFlyerAdRevenueMediationNetworkTypeIronSource,
-    AppsFlyerAdRevenueMediationNetworkTypeApplovinMax,
-    AppsFlyerAdRevenueMediationNetworkTypeFyber,
-    AppsFlyerAdRevenueMediationNetworkTypeAppodeal,
-    AppsFlyerAdRevenueMediationNetworkTypeAdmost,
-    AppsFlyerAdRevenueMediationNetworkTypeTopon,
-    AppsFlyerAdRevenueMediationNetworkTypeTradplus,
-    AppsFlyerAdRevenueMediationNetworkTypeYandex,
-    AppsFlyerAdRevenueMediationNetworkTypeChartBoost,
-    AppsFlyerAdRevenueMediationNetworkTypeUnity,
+    AppsFlyerAdRevenueMediationNetworkTypeGoogleAdMob = 1,
+    AppsFlyerAdRevenueMediationNetworkTypeIronSource = 2,
+    AppsFlyerAdRevenueMediationNetworkTypeApplovinMax= 3,
+    AppsFlyerAdRevenueMediationNetworkTypeFyber = 4,
+    AppsFlyerAdRevenueMediationNetworkTypeAppodeal = 5,
+    AppsFlyerAdRevenueMediationNetworkTypeAdmost = 6,
+    AppsFlyerAdRevenueMediationNetworkTypeTopon = 7,
+    AppsFlyerAdRevenueMediationNetworkTypeTradplus = 8,
+    AppsFlyerAdRevenueMediationNetworkTypeYandex = 9,
+    AppsFlyerAdRevenueMediationNetworkTypeChartBoost = 10,
+    AppsFlyerAdRevenueMediationNetworkTypeUnity = 11,
 } NS_SWIFT_NAME(MediationNetworkType);
 
 #define kAppsFlyerAdRevenueMonetizationNetwork         @"monetization_network"
@@ -79,9 +77,6 @@ typedef NS_CLOSED_ENUM(NSUInteger, AppsFlyerAdRevenueMediationNetworkType) {
 + (void)start;
 
 - (void)trackEvent:(AFADREvent *)event;
-
-- (id)anyDelegate:(nonnull id)delegate adNetworkType:(AFADRAdNetworkType)adNetworkType;
-- (id)delegate:(id)delegate forProtocol:(Protocol *)protocol;
 
 /**
  * An API to provide the data from the impression payload to AdRevenue
