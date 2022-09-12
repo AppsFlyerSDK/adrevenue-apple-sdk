@@ -28,6 +28,7 @@ typedef NS_CLOSED_ENUM(NSUInteger, AppsFlyerAdRevenueMediationNetworkType) {
     AppsFlyerAdRevenueMediationNetworkTypeYandex = 9,
     AppsFlyerAdRevenueMediationNetworkTypeChartBoost = 10,
     AppsFlyerAdRevenueMediationNetworkTypeUnity = 11,
+    AppsFlyerAdRevenueMediationNetworkTypeCustom = 12
 } NS_SWIFT_NAME(MediationNetworkType);
 
 #define kAppsFlyerAdRevenueMonetizationNetwork         @"monetization_network"
