@@ -1,4 +1,0 @@
-module AppsFlyerLib {
-    header "AppsFlyerLib.h"
-    export *
-}

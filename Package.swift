@@ -14,7 +14,7 @@ let package = Package(
 
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        .package(url: "https://github.com/AppsFlyerSDK/AppsFlyerFramework.git", from: "6.12.0")
+        .package(url: "https://github.com/AppsFlyerSDK/AppsFlyerFramework.git", from: "6.12.1")
     ],
 
     targets: [
@@ -23,7 +23,6 @@ let package = Package(
         .binaryTarget(
             name: "adrevenue-apple-sdk",
             path: "iOS/AppsFlyerAdRevenue.xcframework"
-            publicHeadersPath: "iOS/Modules"
         )
     ]
 )
