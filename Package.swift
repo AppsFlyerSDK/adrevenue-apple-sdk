@@ -20,8 +20,7 @@ let package = Package(
         .target(
             name: "adrevenue-apple-sdk",
             dependencies: [ 
-                            .product(name: "AppsFlyerLib-Static", package: "AppsFlyerFramework-Static")],
-        path: "Sources/adrevenue-apple-sdk/"
+                            .product(name: "AppsFlyerLib-Static", package: "AppsFlyerFramework-Static")]
         ),
         .testTarget(
             name: "adrevenue-apple-sdkTests",
