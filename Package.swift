@@ -11,6 +11,8 @@ let package = Package(
             name: "adrevenue-apple-sdk",
             targets: ["adrevenue-apple-sdk"]),
     ],
+    dependencies: [
+        .package(url: "https://github.com/AppsFlyerSDK/AppsFlyerFramework-Static.git",  .exact("6.12.0"))],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
