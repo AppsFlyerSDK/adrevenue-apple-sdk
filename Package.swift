@@ -22,6 +22,6 @@ let package = Package(
         ),
         .testTarget(
             name: "adrevenue-apple-sdkTests",
-            dependencies: ["adrevenue-apple-sdk"]),
+            dependencies: ["adrevenue-apple-sdk"])
     ]
 )
