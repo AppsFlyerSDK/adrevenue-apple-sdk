@@ -19,13 +19,6 @@ let package = Package(
         .binaryTarget(
             name: "adrevenue-apple-sdk",
             path: "iOS/AppsFlyerAdRevenue.xcframework"
-        ),
-        .target(
-            name: "AppsFlyerFramework",
-            dependencies: ["AppsFlyerFramework"]
-        ),
-        .testTarget(
-            name: "adrevenue-apple-sdkTests",
-            dependencies: ["adrevenue-apple-sdk"])
+        )
     ]
 )
