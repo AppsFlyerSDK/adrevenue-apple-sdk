@@ -11,15 +11,18 @@ let package = Package(
             name: "adrevenue-apple-sdk",
             targets: ["adrevenue-apple-sdk"]),
     ],
-    dependencies: [
-        .package(url: "https://github.com/AppsFlyerSDK/AppsFlyerFramework.git", from: "6.12.0")],
+
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
-        .target(
+        .binaryTarget(
             name: "adrevenue-apple-sdk",
-            dependencies: ["AppsFlyerFramework"],
             path: "iOS/AppsFlyerAdRevenue.xcframework"
+        ),
+        .binaryTarget(
+            name: "AppsFlyerLib",
+            url: "https://github.com/AppsFlyerSDK/AppsFlyerFramework/releases/download/6.12.1/AppsFlyerLib.xcframework.zip",
+            checksum: "5d418a84ec708e6142f4eb228d6163c0693559c31a67b741e4dd816fb20f662e"
         )
     ]
 )
