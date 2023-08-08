@@ -21,7 +21,7 @@ let package = Package(
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .binaryTarget(
-            name: "adrevenue-apple-sdk",
+            name: "adrevenue-apple-sdk-BT",
             path: "iOS/AppsFlyerAdRevenue.xcframework"
         )
         .binaryTarget(
@@ -31,10 +31,10 @@ let package = Package(
         )
         .target(name: "adrevenue-apple-sdk2",
                 dependencies: [
-                    .target(name: "adrevenue-apple-sdk"),
+                    .target(name: "adrevenue-apple-sdk-BT"),
                     .target(name: "AppsFlyerLib")
                 ],
-                path: "FrameworkCTargets"
+                path: "adrevenue-apple-sdk"
         )
     ]
 )
