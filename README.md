@@ -53,7 +53,6 @@ pod 'AppsFlyer-AdRevenue'
 3. **Enter Package Repository URL**
    - In the dialog that appears, enter the URL of the repository that hosts the adrevenue-apple-sdk package:
    ```ruby
-    # For statically linked library
     https://github.com/AppsFlyerSDK/adrevenue-apple-sdk.git
     ```
 
