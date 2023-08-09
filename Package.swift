@@ -13,7 +13,7 @@ let package = Package(
 
     targets: [
         .binaryTarget(
-            name: "adrevenue-apple-sdk_",
+            name: "adrevenue-apple-sdk",
             path: "iOS/AppsFlyerAdRevenue.xcframework"
         )
     ]
