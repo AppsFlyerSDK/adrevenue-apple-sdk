@@ -9,10 +9,12 @@ let package = Package(
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "adrevenue-apple-sdk",
-            targets: ["adrevenue-apple-sdk"]),
-        .library(
-            name: "appsflyerLib",
-            targets: ["adrevenue-apple-sdk"])
+            targets: ["adrevenue-appsflyer"]),
+        .import()
+    ],
+
+    dependencies: [
+        .package(url: "https://github.com/AppsFlyerSDK/AppsFlyerFramework-Static", from: "6.12.1"),
     ],
 
     targets: [
@@ -22,10 +24,13 @@ let package = Package(
             name: "adrevenue-apple-sdk",
             path: "iOS/AppsFlyerAdRevenue.xcframework"
         ),
-        .binaryTarget(
-            name: "appsflyerLib",
-            url: "https://github.com/AppsFlyerSDK/AppsFlyerFramework/releases/download/6.12.1/AppsFlyerLib.xcframework.zip",
-            checksum: "5d418a84ec708e6142f4eb228d6163c0693559c31a67b741e4dd816fb20f662e"
+        .target(
+            name: "adrevenue-appsflyer",
+            dependencies: [
+                "AppsFlyerFramework-Static",
+                .target(name: "adrevenue-apple-sdk")
+                ],
+            path: "adrevenue-appsflyer"
         )
     ]
 )
