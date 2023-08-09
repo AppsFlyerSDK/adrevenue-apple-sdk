@@ -9,10 +9,10 @@ let package = Package(
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "adrevenue-apple-sdk",
-            targets: ["adrevenue-appsflyer"]),
+            targets: ["adrevenue-apple-sdk"]),
         .library(
             name: "appsflyerLib",
-            targets: ["adrevenue-appsflyer"])
+            targets: ["adrevenue-apple-sdk"])
     ],
 
     targets: [
