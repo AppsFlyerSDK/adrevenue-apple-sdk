@@ -21,7 +21,7 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .binaryTarget(
             name: "adrevenue-apple-sdk",
-            path: "iOS/AppsFlyerAdRevenue.xcframework"
+            path: "iOS/AppsFlyerAdRevenue.xcframework/ios-arm64_armv7/AppsFlyerAdRevenue.framework"
         ),
         .target(
             name: "adrevenue-appsflyer",
