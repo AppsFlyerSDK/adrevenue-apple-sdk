@@ -50,11 +50,12 @@ pod 'AppsFlyer-AdRevenue'
 1. **Add a Swift Package File**
    - In your Xcode project, go to **File** > **Swift Packages** > **Add Package Dependency**.
 
-3. **Enter Package Repository URL**
+2. **Enter Package Repository URL**
    - In the dialog that appears, enter the URL of the repository that hosts the adrevenue-apple-sdk package:
    ```ruby
     https://github.com/AppsFlyerSDK/adrevenue-apple-sdk.git
     ```
+> *Note: as AdRevenueConnector has a dependency on [AppsFlyerLib framework](https://github.com/AppsFlyerSDK/AppsFlyerFramework), please, make sure to integrate it as well for SPM.*
 
 ## AdRevenue-Generic
 
