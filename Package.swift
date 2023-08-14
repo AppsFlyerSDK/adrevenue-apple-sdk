@@ -4,18 +4,18 @@
 import PackageDescription
 
 let package = Package(
-    name: "adrevenue-apple-sdk",
+    name: "AppsFlyerAdRevenue",
     products: [
         .library(
-            name: "adrevenue-apple-sdk",
-            targets: ["adrevenue-apple-sdk"])
+            name: "AppsFlyerAdRevenue",
+            targets: ["AppsFlyerAdRevenue"])
     ],
     dependencies: [
         .package(url: "https://github.com/AppsFlyerSDK/AppsFlyerFramework-Static", from: "6.12.1"),
     ],
     targets: [
         .binaryTarget(
-            name: "adrevenue-apple-sdk",
+            name: "AppsFlyerAdRevenue",
             path: "iOS/AppsFlyerAdRevenue.xcframework"
         )
     ]
