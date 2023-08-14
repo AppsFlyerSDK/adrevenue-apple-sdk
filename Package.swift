@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "AppsFlyerAdRevenue",
+    name: "appsflyer-adrevenue",
     products: [
         .library(
             name: "AppsFlyerAdRevenue",
