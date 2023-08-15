@@ -55,7 +55,7 @@ pod 'AppsFlyer-AdRevenue'
    ```ruby
     https://github.com/AppsFlyerSDK/adrevenue-apple-sdk.git
     ```
-> *Note: as AdRevenueConnector has a dependency on [AppsFlyerLib framework](https://github.com/AppsFlyerSDK/AppsFlyerFramework), please, make sure to integrate it as well for SPM.*
+> *Note: as AdRevenueConnector has a dependency on [AppsFlyerLib framework](https://github.com/AppsFlyerSDK/AppsFlyerFramework) v6.12.1 , please, make sure to integrate it as well for SPM.*
 
 ## AdRevenue-Generic
 
