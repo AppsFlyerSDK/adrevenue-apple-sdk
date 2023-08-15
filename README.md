@@ -39,11 +39,26 @@ In other words, you no longer need to send a revenue event, we will find it ours
 ### Supported ad monetization network SDKs
 - [AdMob iOS](https://github.com/AppsFlyerSDK/adrevenue-apple-admob)
 
-## AdRevenue-Generic
-To integrate AdRevenue into your Xcode project using CocoaPods, specify it in your `Podfile`:
+## <a id="cocoapods">  Adding The Connector To Your Project via Cocoapods: 
+Add to your Podfile and run `pod install`:
 ```ruby
 pod 'AppsFlyer-AdRevenue'
 ```
+
+## Adding The Connector To Your Project via [Swift Package Manager](#SPM)
+
+1. **Add a Swift Package File**
+   - In your Xcode project, go to **File** > **Swift Packages** > **Add Package Dependency**.
+
+2. **Enter Package Repository URL**
+   - In the dialog that appears, enter the URL of the repository that hosts the adrevenue-apple-sdk package:
+   ```ruby
+    https://github.com/AppsFlyerSDK/adrevenue-apple-sdk.git
+    ```
+> *Note: as AdRevenueConnector has a dependency on [AppsFlyerLib framework](https://github.com/AppsFlyerSDK/AppsFlyerFramework), please, make sure to integrate it as well for SPM.*
+
+## AdRevenue-Generic
+
 ```objective-c
 @import AppsFlyerLib;
 @import AppsFlyerAdRevenue;
