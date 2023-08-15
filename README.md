@@ -1,6 +1,7 @@
 # AdRevenue project by AppsFlyer
 
 [![Version](https://img.shields.io/cocoapods/v/AppsFlyer-AdRevenue.svg)](http://cocoapods.org/pods/AppsFlyer-AdRevenue)
+[![SPM Compatible](https://img.shields.io/badge/SPM-compatible-brightgreen.svg)](https://swift.org/package-manager)
 
 ### Table of Contents
 - [Table of Contents](#table-of-contents)
