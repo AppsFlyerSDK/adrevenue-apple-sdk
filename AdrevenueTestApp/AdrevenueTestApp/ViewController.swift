@@ -6,8 +6,8 @@
 //
 
 import UIKit
-import AppsFlyerAdRevenue
 import AppsFlyerLib
+import AppsFlyerAdRevenue
 
 class ViewController: UIViewController {
 
@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func button(_ sender: Any) {
-        let dictionary = NSMutableDictionary()
+        var dictionary = Dictionary<AnyHashable, Any>()
         dictionary[kAppsFlyerAdRevenueCountry] = "il"
         dictionary[kAppsFlyerAdRevenueAdUnit] = "02134568"
         dictionary[kAppsFlyerAdRevenueAdType] = "Banner"
@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         dictionary[kAppsFlyerAdRevenueECPMPayload] = "encrypt"
         dictionary["foo"] = "testcustom"
         dictionary["bar"] = "testcustom2"
-        AppsFlyerAdRevenue.shared().logAdRevenue(monetizationNetwork: "facebook", mediationNetwork: MediationNetworkType.googleAdMob, eventRevenue: 0.026, revenueCurrency: "USD", additionalParameters: (dictionary as! [AnyHashable : Any]))
+        AppsFlyerAdRevenue.shared().logAdRevenue(monetizationNetwork: "facebook", mediationNetwork: MediationNetworkType.googleAdMob, eventRevenue: 0.026, revenueCurrency: "USD", additionalParameters: dictionary)
     }
     
 }
