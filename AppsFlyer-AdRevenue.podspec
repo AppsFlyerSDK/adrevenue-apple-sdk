@@ -16,6 +16,6 @@ AppsFlyer-AdRevenue description. Description will be added shortly.
   s.ios.deployment_target = '9.0'
 
   s.vendored_frameworks = 'iOS/AppsFlyerAdRevenue.xcframework'
-  s.dependency 'AppsFlyerFramework', '6.12.3'
+  s.dependency 'AppsFlyerFramework', '6.13.0'
 
 end
