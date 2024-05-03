@@ -30,7 +30,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		AasbYCz6DtRvZQLOTY2QwOMkgFE=
+		+N2mo1LDhUt+1tjzTXorxBx47Sg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>iOS.xcconfig</key>
 		<data>
-		Y0VE0qzWUPqtsW5tpACu1nCknCo=
+		vTQhbRgvSjPMLleDUUHZS/Ox0mo=
 		</data>
 		<key>tvOS.xcconfig</key>
 		<data>
-		7D6O0A5e6ummjWJntuI9gv/ZFt8=
+		phYT57vcBXXfibtmKyIPP84bqfo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -188,22 +188,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Y0VE0qzWUPqtsW5tpACu1nCknCo=
+			vTQhbRgvSjPMLleDUUHZS/Ox0mo=
 			</data>
 			<key>hash2</key>
 			<data>
-			wmPl4peG6g00pNF7bKMPUCar4QocYtLtj6KtO35WYZw=
+			sOJ7YXn7glD3zcLb6ax0n3tnmVMfZ09e2a//8OL5bSI=
 			</data>
 		</dict>
 		<key>tvOS.xcconfig</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7D6O0A5e6ummjWJntuI9gv/ZFt8=
+			phYT57vcBXXfibtmKyIPP84bqfo=
 			</data>
 			<key>hash2</key>
 			<data>
-			HB9ECO2bHazVkE8BmQoYKvoHheOT6U/a7UazjiOyN5w=
+			5GDbGCciezZLCRl6iSFEW5esFuiN20WG8TDSpd+itgc=
 			</data>
 		</dict>
 	</dict>

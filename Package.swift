@@ -11,7 +11,7 @@ let package = Package(
             targets: ["AppsFlyerAdRevenue"])
     ],
     dependencies: [
-        .package(url: "https://github.com/AppsFlyerSDK/AppsFlyerFramework-Static", from: "6.13.1"),
+        .package(url: "https://github.com/AppsFlyerSDK/AppsFlyerFramework-Static", from: "6.14.3"),
     ],
     targets: [
         .binaryTarget(
